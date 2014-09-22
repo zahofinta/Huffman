@@ -1,0 +1,32 @@
+﻿Build started 20.2.2014 г. 18:41:43 ч..
+     1>Project "D:\arch\ARCHIVE_MAKER\ARCHIVE_MAKER\ARCHIVE_MAKER.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\MS VISUAL STUDIO 2012\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt help_functions.cpp
+         help_functions.cpp
+     1>help_functions.cpp(189): warning C4018: '<' : signed/unsigned mismatch
+     1>help_functions.cpp(209): warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>help_functions.cpp(229): warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>help_functions.cpp(293): warning C4018: '<' : signed/unsigned mismatch
+     1>help_functions.cpp(303): warning C4018: '<' : signed/unsigned mismatch
+     1>help_functions.cpp(317): warning C4018: '<' : signed/unsigned mismatch
+     1>help_functions.cpp(344): warning C4018: '<' : signed/unsigned mismatch
+     1>help_functions.cpp(358): warning C4018: '>=' : signed/unsigned mismatch
+     1>help_functions.cpp(376): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         D:\MS VISUAL STUDIO 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\arch\ARCHIVE_MAKER\Release\ARCHIVE_MAKER.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\arch\ARCHIVE_MAKER\Release\ARCHIVE_MAKER.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\arch\ARCHIVE_MAKER\Release\ARCHIVE_MAKER.lib" /MACHINE:X86 /SAFESEH Release\bitwriter.obj
+         Release\Compares.obj
+         Release\filesystem.obj
+         Release\help_functions.obj
+         Release\includes.obj
+         Release\main.obj
+         Release\node.obj
+         Release\read_write_streams.obj
+         Release\serialization.obj
+         Generating code
+         Finished generating code
+         ARCHIVE_MAKER.vcxproj -> D:\arch\ARCHIVE_MAKER\Release\ARCHIVE_MAKER.exe
+     1>Done Building Project "D:\arch\ARCHIVE_MAKER\ARCHIVE_MAKER\ARCHIVE_MAKER.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.44

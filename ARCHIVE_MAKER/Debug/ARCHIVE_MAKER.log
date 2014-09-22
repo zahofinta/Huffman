@@ -1,0 +1,31 @@
+﻿Build started 20.2.2014 г. 17:57:08 ч..
+     1>Project "D:\arch\ARCHIVE_MAKER\ARCHIVE_MAKER\ARCHIVE_MAKER.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\MS VISUAL STUDIO 2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt help_functions.cpp
+         help_functions.cpp
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(189): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(209): warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(229): warning C4800: 'unsigned int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(293): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(302): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(316): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(343): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(357): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(375): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\arch\archive_maker\archive_maker\help_functions.cpp(96): warning C4715: 'frequency_map' : not all control paths return a value
+       Link:
+         D:\MS VISUAL STUDIO 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\arch\ARCHIVE_MAKER\Debug\ARCHIVE_MAKER.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\arch\ARCHIVE_MAKER\Debug\ARCHIVE_MAKER.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\arch\ARCHIVE_MAKER\Debug\ARCHIVE_MAKER.lib" /MACHINE:X86 Debug\bitwriter.obj
+         Debug\Compares.obj
+         Debug\filesystem.obj
+         Debug\help_functions.obj
+         Debug\includes.obj
+         Debug\main.obj
+         Debug\node.obj
+         Debug\read_write_streams.obj
+         Debug\serialization.obj
+         ARCHIVE_MAKER.vcxproj -> D:\arch\ARCHIVE_MAKER\Debug\ARCHIVE_MAKER.exe
+     1>Done Building Project "D:\arch\ARCHIVE_MAKER\ARCHIVE_MAKER\ARCHIVE_MAKER.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.53

@@ -1,0 +1,64 @@
+#include "help_functions.h"
+#include "includes.cpp"
+
+
+int main ()
+
+{   
+		
+		const string archive="zip.bin" ;
+		string dir="D:/a1";
+		string myarchive="myarchive.txt";
+		ArchiveDirectoryTree(dir,archive);
+	
+		map <char,int> freq;
+		map <char,int> freq_for_char_coded;
+		map <char,string> codemap;
+		ofstream test(myarchive,ios::binary|ios::app);
+		ifstream infile(archive, ios::binary);
+		frequency_for_char(infile,freq);
+		string map_bits_string=map_to_bit_string(freq);
+		cout<<map_bits_string<<endl;
+		bitstring(map_bits_string, test);
+	
+		vector <pair<char,Node*>> *testvector = set_nodes_in_vector_by_map(freq);
+		sort_pairs(*testvector);
+	
+		Node* r = root(*testvector);
+		string p;
+	
+		newalphabet(r,p,codemap);
+
+		string q = get_content_of_file(archive);
+
+		
+		bitstring(q,codemap,test);
+	
+		vector<pair<char,int>*>* mytestvector= new vector<pair<char,int>*>();
+	
+		make_pair_vector_from_tree(r,*mytestvector,0);
+		int len = mytestvector->size();
+	
+		test.close();
+		infile.close();
+		infile.open(myarchive,ios::binary);
+
+		map <char,int> decodefreq;
+		decodefreq = read_map_from_file(infile);
+		print_frequency(decodefreq);
+		vector<pair<char,Node*>>* decodepairvector=set_nodes_in_vector_by_map(decodefreq);
+		sort_pairs(*decodepairvector);
+		Node * R=root(*decodepairvector);
+		map <char,string> decodemap;
+		string alphabet_string;
+		newalphabet(R,alphabet_string,decodemap);
+		print_code(decodemap);
+		string decodestring=get_content_of_file(infile);
+		string bits = to_bits(decodestring, bitstring(decodestring,decodemap,test));
+		cout<<decode(R, bits);
+
+		infile.close();
+		test.close();
+		ExtractDirectoryTree("D:/a4",archive);
+		system("pause");
+}
